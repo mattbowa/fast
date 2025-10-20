@@ -1,0 +1,33 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.cover
+.coverage
+.pytest_cache
+.mypy_cache
+
+# Envs
+.env
+.venv
+venv
+env
+
+# Git
+.git
+.gitignore
+
+# OS/IDE
+.DS_Store
+.idea
+.vscode
+
+# Build artifacts
+dist
+build
+site
+
+
+

@@ -28,6 +28,30 @@ The app will be available at `http://127.0.0.1:8000/`.
 - `GET /` → `{ "message": "Hello, World!" }`
 - `GET /health` → `{ "status": "ok" }`
 
+### Docker
+
+Build and run with Docker directly:
+
+```bash
+docker build -t fastapi-hello .
+docker run --rm -it -p 8000:8000 fastapi-hello
+```
+
+Or use docker compose (one command):
+
+```bash
+docker compose up --build
+```
+
+### Makefile shortcuts
+
+```bash
+make build     # build image
+make run       # run container (maps :8000)
+make stop      # stop container
+make logs      # follow logs
+```
+
 ### Project layout
 
 ```
@@ -38,4 +62,5 @@ fast/
 └─ README.md
 ```
 
-
+## Endpoint
+https://fast-vdkg.onrender.com
